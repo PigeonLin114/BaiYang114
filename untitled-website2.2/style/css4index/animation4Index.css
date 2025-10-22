@@ -1,0 +1,30 @@
+@keyframes boxAnimate{
+    0%,100%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translate(100px);
+    }
+}
+.box .square{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgb(0,0,0,0.1);
+    border: 1px solid rgb(255,255,255,0.5);
+    border-right: 1px solid rgb(255,255,255,0.2);
+    border-bottom: 1px solid rgb(255,255,255,0.2);
+    background:rgb(255,255,255,0.3);
+    border-radius: 10px;
+    animation: boxAnimate 15s linear 1s infinite;
+    animation-delay: calc(-1s*var(--i));
+}
+/* 右下角 */
+.box .square:nth-child(1){
+    animation-delay: calc(-7s*var(--i));
+    background:rgb(255,255,255,0.8);
+    bottom: 100px;
+    right: 120px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}

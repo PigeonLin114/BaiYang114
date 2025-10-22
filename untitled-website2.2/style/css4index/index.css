@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "SourceHanSans_Normal";
+    src: url(../../fonts/SourceHanSansSC-Normal.otf);
+}
+
+@font-face {
+    font-family: "SourceHanSans_Bold";
+    src: url(../../fonts/SourceHanSansSC-Bold.otf);
+}
+
+*::selection{
+    background-color: rgb(210, 210, 210);
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--orangerColor-3);
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(139, 173, 228);
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-style: wavy;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+hr{
+    visibility: hidden;
+}
+
+/* 头图 */
+.pictorialHeader{
+    background-image: url(../../img/background1.webp);
+    height: 300px;
+    margin-bottom: 40px;
+    background-size: cover;
+    background-position: center;
+}
+/* 
+边框
+.pictorialHeader::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid black;
+} */
+
+/* 页眉 */
+.header{
+    width: 100%;
+    grid-area: h;
+}
+
+/* 主框架（头图以下所有部分） */
+.main{
+    display:grid;
+    grid-template-columns: 25% 50%;
+    grid-template-areas: 'about h'
+                        'l m'
+                        'l m';
+    grid-gap: 18px;
+    align-content:center;
+    justify-content: center;
+    justify-items: left;
+}
+
+/* 链接列表 */
+.lists{
+    display:grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 'warning warning'
+                        'text text'
+                        'main main'
+                        'l1 r1'
+                        'others others'
+                        'special special';
+    grid-gap: 18px;
+    justify-items: start;
+    width: 100%;
+    grid-area: m;
+}
+
+/* 链接分类 */
+.group{
+    justify-items: left;
+    padding-left: 0.2vw;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgb(0,0,0,0.1);
+    border: 2px solid rgb(255,255,255,0.5);
+    border-right: 2px solid rgb(255,255,255,0.2);
+    border-bottom: 2px solid rgb(255,255,255,0.2);
+    background:rgba(255, 255, 255, 0.1);
+    --hover: rgba(200, 200, 200, 0.5);
+    --active: rgba(200, 200, 200, 0.7);
+    border-radius: 12px;
+    transition: 2s;
+}
+
+.group:hover{
+    background: var(--hover);
+    z-index: 3;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    transition: 0.25s;
+}
+
+.group:active{
+    background: var(--active);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
+/* 左侧边栏 */
+.leftSidebar{
+    justify-items: start;
+    width: 100%;
+    grid-area: l;
+}
+
+#ChangeLog{
+    width: 100%;
+    height: 400px;
+}
+
+/* 标准大小图标 */
+#icons{
+    height: 1.7vw;
+    vertical-align: middle;
+}
+
+/* 小图标 */
+#iconsSmall{
+    height: 1.1vw;
+    vertical-align: middle;
+}
+
+p1{
+    color: rgb(100, 100, 100);
+    display: block;
+    margin-top: 0;
+    font-size: 1vw;
+    font-family: SourceHanSans_Normal;
+    user-select: none;
+    letter-spacing: 0.5px;
+}
+
+p2 {
+    color: rgb(100, 100, 100);
+    display: block;
+    margin-top: 0;
+    font-size: 0.6vw;
+    font-family: SourceHanSans_Normal;
+    user-select: none;
+    letter-spacing: 0.5px;
+}
+
+mainTitle{
+    font-size: 4vw;
+    margin-top: 0;
+    background-image: url(../../img/mainTitle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    font-family: SourceHanSans_Bold;
+    -webkit-background-clip: text;
+    color: rgba(80, 80, 80, 0.2);
+    user-select: none;
+}
+
+mainTitle::selection{
+    background-color: rgb(100, 100, 100);
+    color: rgba(230, 230, 230, 0.8);
+}

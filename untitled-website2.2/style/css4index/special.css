@@ -1,0 +1,40 @@
+.special{
+    display: none;
+    position: absolute;
+    top: -10px;
+    cursor: move;
+    z-index: 3;
+    box-shadow: 0 25px 45px rgb(0,0,0,0.1);
+    border: 3px solid rgb(255,255,255,0.5);
+    border-right: 3px solid rgb(255,255,255,0.2);
+    border-bottom: 3px solid rgb(255,255,255,0.2);
+    /* 2.0独有 */
+    width: 48px;
+    height: 48px;
+    z-index: 20;
+}
+/* 2.0独有 */
+#bingo{
+    width: 96px;
+    height: 96px;
+    z-index: 20;
+}
+/*
+1.0独有
+.box :nth-child(7){
+    width: 77.5px;
+    height: 48px;
+}
+.box :nth-child(8){
+    width: 44.8125px;
+    height: 48px;
+}
+.box :nth-child(9){
+    width: 43.5px;
+    height: 74.3125px;
+}
+.box :nth-child(10){
+    width: 78.8px;
+    height: 74.3125px;
+}
+*/

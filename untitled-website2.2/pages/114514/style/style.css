@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "SmileySans";
+    src: url(../../../fonts/SmileySans-Oblique.otf);
+}
+
+@font-face {
+    font-family: "SourceHanSans";
+    src: url(../../../fonts/SourceHanSansSC-Normal.otf);
+}
+
+.shadowbox {
+    border: 1px solid #333;
+    padding: 8px 8px 8px 8px;
+    background-image: url(../imgAndFont/2.png);
+    opacity: 0.82;
+}
+
+body {
+    font-family: SmileySans;
+    width: 100%;
+    height: 100%;
+    background: url(../imgAndFont/4.jpg) center;
+    background-size: cover;/*背景跟随*/
+}
+
+a{
+    color: #02a6c4;
+    text-decoration-line: none;
+    text-underline-offset: -0.5rem;
+}
+
+p,li{
+    font-family: SourceHanSans;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+l1{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+l2{
+    font-size: 24px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+/*我承认阁下的学习能力很强，但假若我拿出《c++从入门到精通》，阁下又该如何应对？
+  I admit that your learning ability is very strong, but if I come up
+  with this book "C++From Beginner to Proficient", how should you respond?
+*/
+
+l3{
+    text-decoration: line-through ;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    opacity: 1;
+    background-image: url(../imgAndFont/2.png);
+}

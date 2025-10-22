@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- 样式表 -->
+        <link href="style\colorsTheme.css" rel="stylesheet"/><!-- 色彩主题 -->
+        <link href="style\css4index\special.css" rel="stylesheet"/>
+        <link href="style\css4index\enteringAnimation.css" rel="stylesheet"/>
+        <link href="style\css4index\animation4Index.css" rel="stylesheet"/><!-- 动画设置 -->
+        <link href="style\css4index\index.css" rel="stylesheet"/><!-- 页面样式 -->
+        <!-- 其他 -->
+        <link href="img\icons\favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+        <title>untitled website</title>
+    </head>
+
+    <body>
+        <!-- 头图 -->
+        <div class="pictorialHeader">
+            <!-- 浮动 -->
+            <div class="box">
+                <div class="square" style="--i:2;" id="sp"></div>
+                <img src="img\special1.png" draggable="false" class="special">
+                <img src="img\special2.png" draggable="false" class="special">
+                <img src="img\special3.png" draggable="false" class="special">
+                <img src="img\special4.png" draggable="false" class="special">
+                <img src="img\special.png" draggable="false" id="bingo" class="special ani-m">
+            </div>
+        </div>
+        <!-- 正文 -->
+        <div class="main">
+            <!-- 页眉 -->
+            <div class="header" style="grid-area: h;">
+                <div class="group ani-r">
+                    <p1>这大概真的是最后一个版本了（</p1>
+                </div>
+            </div>
+            <!-- 中间（主要链接列表） -->
+            <div class="lists" style="grid-area: m;">
+                <!-- 网页描述 -->
+                <div class="group ani-r" style="grid-area: text; z-index:1">
+                    <strong><mainTitle>&nbsp;Untitled Website</mainTitle></strong>
+                </div>
+                <!-- 警告 -->
+                <div class="group ani-r" id="warning" style="grid-area: warning;">
+                    <p2>使用<img id="icons" style="width:17px; height:17px;" src="img/icons/Chrome.png" draggable="false">&nbsp;Chrome&nbsp;或<img id="icons" style="width:17px; height:17px;" src="img/icons/Edge.png" draggable="false">&nbsp;Edge&nbsp;打开以获得最佳体验</p2>
+                </div>
+                <!-- 常用页面 -->
+                <div class="group ani-r" style="grid-area: main;">
+                    <p1>常用页面</p1>
+                    <hr>
+                    <p1><a href="http://www.dgsyzx.net/" target="_blank">
+                        <img id="icons" src="img/icons/dgsyzx_logo.png" draggable="false">
+                        学校官网
+                    </a></p1>
+                    <p1><a href="http://web2.dgsyzx.net/Article/zjtb.asp" target="_blank">
+                        <img id="icons" src="img/icons/no_img.png" draggable="false">
+                        学校德育网
+                    </a></p1>
+                </div>
+                <!-- desmos -->
+                <div class="group ani-r" style="grid-area: l1;">
+                    <p1><img id="iconsSmall" src="img\icons\desmos.ico" draggable="false"> desmos 图形（离线镜像）</p1>
+                    <p2>镜像自 https://www.desmos.com</p2>
+                    <hr>
+                    <!-- desmos 图形 -->
+                    <p1><a href="pages\desmos\calculator\desmosCalculator.html" target="_blank">
+                        <img id="icons" src="pages\desmos\calculator\assets\img\apps\graphing\favicon.ico" draggable="false">
+                        desmos calculator
+                    </a></p1>
+                    <!-- desmos 几何 -->
+                    <p1><a href="pages\desmos\geometry\desmosGgeometry.html" target="_blank">
+                        <img id="icons" src="pages\desmos\geometry\assets\img\apps\geometry\favicon.ico" draggable="false">
+                        desmos geometry
+                    </a></p1>
+                    <!-- desmos 3d -->
+                    <p1><a href="pages\desmos\3d-beta\desmos3dBeta.html" target="_blank">
+                        <img id="icons" src="pages\desmos\3d-beta\assets\img\apps\3d\favicon.ico" draggable="false">
+                        desmos 3d(beta)
+                    </a></p1>
+                </div>
+                <!-- PhET -->
+                <div class="group ani-r" style="grid-area: r1;">
+                    <p1><img id="iconsSmall" src="img\icons\phet_logo.ico" draggable="false"> PhET</p1>
+                    <p2>来自 https://phet.colorado.edu/</p2>
+                    <hr>
+                    <!-- 分子形状 -->
+                    <p1><a href="pages\PhET\molecule-shapes_zh_CN.html" target="_blank">
+                        <img id="icons" src="img\icons\no_img.png" draggable="false">
+                        分子形状
+                    </a></p1>
+                    <!-- ph值 -->
+                    <p1><a href="pages\PhET\ph-scale_zh_CN.html" target="_blank">
+                        <img id="icons" src="img\icons\no_img.png" draggable="false">
+                        ph值
+                    </a></p1>
+                    <!-- 扩散 -->
+                    <p1><a href="pages\PhET\diffusion_zh_CN.html" target="_blank">
+                        <img id="icons" src="img\icons\no_img.png" draggable="false">
+                        扩散
+                    </a></p1>
+                    <!-- 波的干涉 -->
+                    <p1><a href="pages\PhET\wave-interference_zh_CN.html" target="_blank">
+                        <img id="icons" src="img\icons\no_img.png" draggable="false">
+                        波的干涉
+                    </a></p1>
+                    <!-- 光的折射 -->
+                    <p1><a href="pages\PhET\bending-light_zh_CN.html" target="_blank">
+                        <img id="icons" src="img\icons\no_img.png" draggable="false">
+                        光的折射
+                    </a></p1>
+                </div>
+                <!-- 其他 -->
+                <div class="group ani-r" id="others" style="grid-area: others;">
+                    <p1>其他</p1>
+                    <hr>
+                    <!-- 学校旧官网 -->
+                    <abbr title="学校官网中旧官网的链接写错了，多写了个端口，导致无法从那里进，但是把端口号删掉就好了">
+                    <p1><a href="http://web2.dgsyzx.net/" target="_blank">
+                        <img id="icons" src="img\icons\no_img.png" draggable="false">
+                        学校旧官网
+                    </a><p2></p2></p1></abbr>
+                    <!-- 学校图书馆 -->
+                    <p1><a href="http://10.186.87.12/userlib/default.asp" target="_blank">
+                        <img id="icons" src="img\icons\no_img.png" draggable="false">
+                        学校图书馆
+                    </a></p1>
+                    <!-- 天融信终端威胁防御系统 -->
+                    <p1><a href="http://10.153.5.8/" target="_blank">
+                        <img id="icons" src="img\icons\no_img.png" draggable="false">
+                        天融信终端威胁防御系统
+                    </a></p1>
+                </div>
+                <!-- special -->
+                <div class="group ani-l" id="special" style="grid-area: special;display:none">
+                    <!-- greekwin -->
+                    <p1>ΜΨΚβ�³Γζ</p1>
+                    <p2>θΏ™ζ�―δΈ€δΈ�ι��θ—�η�„ι΅µι�ΆοΌ�δΌ�ε΅�ζ­£ε�¨ζµ‹θ―•η�„ζ�–ε¥‡ζ€�η�„δΈ�θ¥Ώ</p2>
+                    <hr>
+                    <input type="color" style="width: 80%; opacity: 0.5">
+                    <p1><a href="pages\114514\index.html" target="_blank">
+                        <img id="icons" src="img\icons\1.ico" draggable="false">
+                        黑历史
+                    </a></p1>
+                    <p1><a href="pages\innovation\index.html" target="_blank">
+                        <img id="icons" src="img\icons\innovation.png" draggable="false">
+                        创想封存室
+                    </a></p1>
+                </div>
+            </div>
+            <!-- 关于 -->
+            <div class="group ani-l" style="grid-area: about;">
+                <p1><a href="pages\description\description.html" target="_blank">关于</a></p1>
+            </div>
+            <!-- 👈侧边栏 -->
+            <div class="leftSidebar" style="grid-area: l;">
+                <div class="group ani-l" style="margin-bottom: 18px;">
+                    <p1>网页版本: v2.2.0</p1>
+                </div>
+                <div class="group ani-l" style="margin-bottom: 18px;">
+                    <p1>编写语言:</p1>
+                    <p1>HTML</p1>
+                    <p1>CSS</p1>
+                    <p1>Javascript</p1>
+                </div>
+                <div class="group ani-l" style="margin-bottom: 18px;">
+                    <p1>兼容性:</p1>
+                    <p1><img id="iconsSmall" src="img/icons/Chrome.png" draggable="false">&nbsp;完全兼容&nbsp;&nbsp;Chrome</p1>
+                    <p1><img id="iconsSmall" src="img/icons/Edge.png" draggable="false">&nbsp;完全兼容&nbsp;&nbsp;Edge&nbsp;（理论上）</p1>
+                    <p1><img id="iconsSmall" src="img/icons/Firefox.png" draggable="false">&nbsp;高度兼容&nbsp;&nbsp;Firefox</p1>
+                    <p1><img id="iconsSmall" src="img/icons/IE.png" draggable="false">&nbsp;部分兼容&nbsp;&nbsp;IE</p1>
+                </div>
+                <div class="group ani-l" style="margin-bottom: 18px; overflow-x: hidden;">
+                    <p1>使用的依赖项:</p1>
+                    <p2>https://github.com/marcbruederlin/particles.js</p2>
+                </div>
+                <div class="group ani-l" style="margin-bottom: 18px; overflow-x: hidden;">
+                    <p1>3.0.0版本绝赞开发中！</p1>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- js -->
+    <script src="script\F12.js"></script>
+    <script src="script\img1.js"></script>
+    <script src="script\index.js"></script>
+</html>

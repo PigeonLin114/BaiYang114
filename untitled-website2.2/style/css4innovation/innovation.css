@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "SourceHanSans_Normal";
+    src: url(../../fonts/SourceHanSansSC-Normal.otf);
+}
+
+@font-face {
+    font-family: "SourceHanSans_Bold";
+    src: url(../../fonts/SourceHanSansSC-Bold.otf);
+}
+
+*::selection{
+    background-color: rgb(210, 210, 210);
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--orangerColor-3);
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+hr{
+    visibility: hidden;
+}
+
+/* 主框架（头图以下所有部分） */
+.main{
+    display:grid;
+    grid-template-columns: 30% 40%;
+    grid-template-areas: 'h h'
+                        'l m'
+                        'l m';
+    grid-gap: 20px;
+    align-content:center;
+    justify-content: center;
+    justify-items: left;
+}
+
+/* 链接列表 */
+.links{
+    justify-items: start;
+    width: 100%;
+    grid-area: m;
+}
+
+/* 链接分类 */
+.group{
+    justify-items: left;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgb(0,0,0,0.1);
+    border: 5px solid rgb(255,255,255,0.5);
+    border-right: 5px solid rgb(255,255,255,0.2);
+    border-bottom: 5px solid rgb(255,255,255,0.2);
+    color: rgba(250, 250, 250);
+    background: rgba(150, 150, 150);
+    --hover: rgba(250, 250, 250, 0.3);
+    --active: rgba(220, 220, 220, 0.8);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.group:hover{
+    background: var(--hover);
+    z-index: 10;
+    padding: 10px;
+    transition: 0.3s;
+    color: rgba(100, 100, 100);
+}
+
+.group:active{
+    background: var(--active);
+    transition: 0.2s;
+}
+
+/* 左侧边栏 */
+.leftSidebar{
+    justify-items: start;
+    width: 100%;
+    grid-area: l;
+}
+
+/* 标准大小图标 */
+#icons{
+    height: 40px;
+    vertical-align: middle;
+}
+
+/* 小图标 */
+#iconsSmall{
+    height: 25px;
+    vertical-align: middle;
+}
+
+p1{
+    display: block;
+    margin-top: 0;
+    font-size: 18px;
+    font-family: SourceHanSans_Normal;
+    user-select: none;
+    letter-spacing: 0.5px;
+}
+
+p2 {
+    display: block;
+    margin-top: 0;
+    font-size: 12px;
+    font-family: SourceHanSans_Normal;
+    user-select: none;
+    letter-spacing: 0.5px;
+}
+
+p3{
+    display: block;
+    margin-top: 0;
+    font-size: 24px;
+    font-family: SourceHanSans_Normal;
+    user-select: none;
+    letter-spacing: 0.5px;
+}
+
+mainTitle{
+    font-size: 5em;
+    margin-top: 0;
+    font-family: SourceHanSans_Bold;
+    user-select: none;
+}

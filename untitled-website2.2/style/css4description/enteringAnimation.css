@@ -1,0 +1,93 @@
+@keyframes enteringAnimation-l {
+    0% {
+        transform: translate(-800px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes enteringAnimation-r {
+    0% {
+        transform: translate(800px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes enteringAnimation-m {
+    0% {
+        transform: scale(0.5, 0.5);
+        opacity: 0;
+    }
+    80% {
+        transform: scale(0.9, 0.9);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+.ani-l{
+    animation: enteringAnimation-l 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ani-r{
+    animation: enteringAnimation-r 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ani-m{
+    animation: enteringAnimation-m 0.2s;
+}
+
+.ani-r:nth-child(0){
+    animation-delay: -0.1s;
+}
+.ani-r:nth-child(1){
+    animation-delay: -0.15s;
+}
+.ani-r:nth-child(2){
+    animation-delay: -0.2s;
+}
+.ani-r:nth-child(3){
+    animation-delay: -0.25s;
+}
+.ani-r:nth-child(4){
+    animation-delay: -0.3s;
+}
+.ani-r:nth-child(5){
+    animation-delay: -0.35s;
+}
+.ani-r:nth-child(6){
+    animation-delay: -0.4s;
+}
+.ani-r:nth-child(7){
+    animation-delay: -0.45s;
+}
+
+
+.ani-l:nth-child(0){
+    animation-delay: -0.1s;
+}
+.ani-l:nth-child(1){
+    animation-delay: -0.15s;
+}
+.ani-l:nth-child(2){
+    animation-delay: -0.2s;
+}
+.ani-l:nth-child(3){
+    animation-delay: -0.25s;
+}
+.ani-l:nth-child(4){
+    animation-delay: -0.3s;
+}
+.ani-l:nth-child(5){
+    animation-delay: -0.35s;
+}
